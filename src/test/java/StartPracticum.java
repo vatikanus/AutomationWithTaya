@@ -25,6 +25,8 @@ public class StartPracticum {
     public void testName()
     {
         WebElement element = wd.findElement(By.tagName("a"));
+        wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.cssSelector("div"));
         List<WebElement> elements = wd.findElements(By.tagName("a"));
         for(WebElement e:elements)
         {
@@ -32,6 +34,13 @@ public class StartPracticum {
         }
 
         System.out.println(elements.size());
+        wd.findElement(By.cssSelector(".container"));
+        wd.findElement(By.cssSelector("#root"));
+        wd.findElement(By.cssSelector("[href = '/login']"));
+        wd.findElement(By.cssSelector("[href]"));
+        wd.findElement(By.cssSelector("[href ^= '/lo']")); //start
+        wd.findElement(By.cssSelector("[href $= 'in']")); //end
+        wd.findElement(By.cssSelector("[href *= 'gi']")); // contains
 
     }
 
