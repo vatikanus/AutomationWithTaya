@@ -26,7 +26,9 @@ public class StartPracticum {
     {
         WebElement element = wd.findElement(By.tagName("a"));
         wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.xpath("//a"));
         wd.findElement(By.cssSelector("div"));
+        wd.findElement(By.xpath("//div"));
         List<WebElement> elements = wd.findElements(By.tagName("a"));
         for(WebElement e:elements)
         {
@@ -35,6 +37,7 @@ public class StartPracticum {
 
         System.out.println(elements.size());
         wd.findElement(By.cssSelector(".container"));
+        wd.findElement(By.xpath("//*[@=class = 'container']"));
         wd.findElement(By.cssSelector("#root"));
         wd.findElement(By.cssSelector("[href = '/login']"));
         wd.findElement(By.cssSelector("[href]"));

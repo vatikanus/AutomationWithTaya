@@ -16,6 +16,7 @@ public class TableTest {
     {
         wd = new ChromeDriver();
         wd.navigate().to("https://www.w3schools.com/css/css_table.asp");
+
     }
 
     @Test
